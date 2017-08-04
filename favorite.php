@@ -1,6 +1,4 @@
 <?php
-  include("../util.php");
-  configSession();
 
   $houseID = $_GET['id'];
   $currentUser = $_SESSION['login_user'];
