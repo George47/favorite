@@ -3,7 +3,7 @@
   $userID = 'Your userID';
 
   $sql = "SELECT * FROM items WHERE itemID = '$itemID' AND userID = '$userID'";
-  $result = mysqli_query($db, $sql);
+  $result = mysqli_query('Your database connection', $sql);
   if(mysqli_num_rows($result) == 0) {
     $sql2 = "INSERT INTO items (itemID, userID) VALUES ('$itemID', '$userID')";
     $query2 = $db->prepare($sql2);
